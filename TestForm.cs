@@ -98,27 +98,30 @@ namespace Hierarchy_of_Needs
             }
 
             {
-                Random rand = new Random();
-                for (int i = 0; i < pairs.Length; i++)
+                for (int shakeCount = 0; shakeCount < 10; ++shakeCount)
                 {
-                    var j = rand.Next(pairs.Length-1);
-                    var tmp = pairs[i];
-                    pairs[i] = pairs[j];
-                    pairs[j] = tmp;
+                    Random rand = new Random();
+                    for (int i = 0; i < pairs.Length; ++i)
+                    {
+                        var j = rand.Next(pairs.Length - 1);
+                        var tmp = pairs[i];
+                        pairs[i] = pairs[j];
+                        pairs[j] = tmp;
+                    }
                 }
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Next();
             score[getIndex((Button)sender)]++;
+            Next();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Next();
             score[getIndex((Button)sender)]++;
+            Next();
         }
 
         int getIndex(Button button)

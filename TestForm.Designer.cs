@@ -53,7 +53,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(12, 121);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(597, 52);
+            this.button1.Size = new System.Drawing.Size(700, 52);
             this.button1.TabIndex = 3;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = false;
@@ -67,7 +67,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(12, 200);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(597, 52);
+            this.button2.Size = new System.Drawing.Size(700, 52);
             this.button2.TabIndex = 4;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = false;
@@ -78,7 +78,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(621, 267);
+            this.ClientSize = new System.Drawing.Size(724, 267);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);

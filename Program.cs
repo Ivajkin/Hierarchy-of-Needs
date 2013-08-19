@@ -15,7 +15,22 @@ namespace Hierarchy_of_Needs
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+
+            var debug = false;
+            if (debug)
+            {
+                var needs = new Needs();
+                needs.material = 1;
+                needs.safety = 2;
+                needs.connections = 3;
+                needs.respect = 4;
+                needs.realisation = 5;
+                Application.Run(new ResultForm(new MainForm(), needs));
+            }
+            else
+            {
+                Application.Run(new MainForm());
+            }
         }
     }
 }
